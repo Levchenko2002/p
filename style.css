@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /** justify-content: between, flex-end, flex-start , center, spece-arroud; **/
+    align-items: center; /**Что бы бокс был только вокруг текста**/
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, #1E4776, #1E4776),linear-gradient(0deg, #15549D, #15549D);
+    background-image: url(./../img/headerlogo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.header-title{
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+
+.header-subtitle{
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+    letter-spacing: 0.2em; /**расстояние между буквами **/
+    text-transform: uppercase; /**заглавные буквы **/
+    color: #FFFFFF;
+}
+
+/* Portfolio */
+.portfolio{
+    padding-top: 180px;
+    padding-bottom: 120px;
+}
+
+.portfolio-cards-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Protfolio */
+/* CONTAINER */
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+/* CONTAINER */
+.section-header{
+    margin: 0;
+    margin-bottom: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 1.3;
+    color: #000000;
+}
+
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+    width: 540px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.card:last-child,.card:nth-last-child(2){
+    margin: 0;
+}
+
+.card-title{
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #000000;
+}
+
+.card p{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #000000;
+}
+
+.card-img{
+    margin-bottom: 20px;
+}
+
+.buy{
+    background-color: grey;
+    border: 0;
+    transition: step-start;
+    display: block;
+    float: left;
+    outline: none;
+    text-align: center;
+    align-items: center;
+}
